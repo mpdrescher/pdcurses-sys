@@ -48,13 +48,13 @@ fn main() {
         .file("src/PDCurses/pdcurses/touch.c")
         .file("src/PDCurses/pdcurses/util.c")
         .file("src/PDCurses/pdcurses/window.c")
-        .file("src/PDCurses/win32a/pdcclip.c") //win32a implementation files
-        .file("src/PDCurses/win32a/pdcdisp.c")
-        .file("src/PDCurses/win32a/pdcgetsc.c")
-        .file("src/PDCurses/win32a/pdckbd.c")
-        .file("src/PDCurses/win32a/pdcscrn.c")
-        .file("src/PDCurses/win32a/pdcsetsc.c")
-        .file("src/PDCurses/win32a/pdcutil.c")
+        .file("src/PDCurses/win32/pdcclip.c") //win32 implementation files
+        .file("src/PDCurses/win32/pdcdisp.c")
+        .file("src/PDCurses/win32/pdcgetsc.c")
+        .file("src/PDCurses/win32/pdckbd.c")
+        .file("src/PDCurses/win32/pdcscrn.c")
+        .file("src/PDCurses/win32/pdcsetsc.c")
+        .file("src/PDCurses/win32/pdcutil.c")
         .include("src/PDCurses")
         .define("PDC_WIDE", Some("Y")) // Build with wide-character (Unicode) support
         .define("PDC_FORCE_UTF8", Some("Y")) // Makes PDCurses ignore the system locale, and treat all narrow-character strings as UTF-8
